@@ -1,0 +1,66 @@
+ 
+   body {
+    margin: 0;
+    padding: 0;
+   }
+   .mode {
+        display: inline-block;
+        padding: 115% 0% 0% 0%;
+        position: absolute;
+    }
+    .change {
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 90%;
+        padding: 15px;
+        margin-left: 8px;
+    }
+    .dark{
+        background-color: #3f3f3f;
+        color: #ffffe0;
+    }
+
+    .vl {
+        border-left: 6px solid black;
+        height: 100%;
+        margin-left: 110px;
+        position: absolute;
+        top: 0;
+        bottom: 0;  
+      }
+
+    .h-lines {
+        border: 2px solid black;
+        max-width: 110px;
+        margin :0;
+        padding: 0;   
+    }
+
+    .github-logo{
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 90%;
+        padding: 15px;
+        margin-left: 120px;
+    }
+
+    .linkedIn-logo {
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 90%;
+        padding: 15px;
+        margin-left: 950px;
+    }
+    
+    .midPage {
+        text-align: center;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 15%;
+        height:auto;
+        display: inline-block;
+        margin-left: 40%;
+        border: 5px solid #ffffe0;
+      }

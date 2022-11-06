@@ -32,6 +32,24 @@ $(() => {
     }
       $('#hobButton').on('click', hobShow)
 
+      const resumeShow = () => {
+        // $('#home').hide()
+        $('#bio').hide()
+        $('#projects').hide()
+        $('#resume').show()
+        $('#hobbies').hide()
+      }
+        $('#rButton').on('click', resumeShow)
+
+        const projectsShow = () => {
+          // $('#home').hide()
+          $('#bio').hide()
+          $('#projects').show()
+          $('#resume').hide()
+          $('#hobbies').hide()
+        }
+          $('#pButton').on('click', projectsShow)
+
 
     $('.change').on('click', function() {
         if( $('body').hasClass('dark')) {
@@ -40,5 +58,13 @@ $(() => {
             $('body').addClass('dark');
         }
  });
-    $('.hide').on('click', hide())
+
+    // const dropDown = () => {
+    //   $('.menu').toggle(function() {
+    //     $('.menu').css('display', 'block')
+    //   })
+    // }
+    // $('btn').on('click', dropDown)
+
+    // $('.hide').on('click', hide())
 })

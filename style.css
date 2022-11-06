@@ -7,11 +7,13 @@
    
     body {
         background-color: #c0ded3;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     } 
+
+    
 
     .slider {
         width: 800px;
@@ -72,15 +74,8 @@
         margin-left: -20%;
     }
 
-    /* #radio3:checked ~ .first{
-        margin-left: -40%;
-    }
 
-    #radio4:checked ~ .first{
-        margin-left: -60%;
-    } */
-
-    li, a {
+    .navButtons ~ li, a {
         font-family: fantasy;
         font-weight: 500;
         font-size: 16px;
@@ -159,3 +154,88 @@
         width: 50%;
         padding: 10px;
       }
+
+      #resume {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        display: flex;
+      }
+
+      button {
+        width: 100px;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .show {
+        display: block;
+    }
+
+    #menu {
+        color: #B19FF9;
+        outline: 2px solid #ffffe0;
+        width:10vh;
+        overflow: hidden;
+        
+    }
+
+    #btn,.dropList{
+        background:#B19FF9;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+        width: 10vh;
+      }
+      #btn:hover,.dropList:hover{
+        background:#fff;
+        color:#B19FF9;
+      }
+      #btn:before,#btn:after,.dropList:before,.dropList:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #B19FF9;
+        transition:400ms ease all;
+      }
+      #btn:after,.dropList::after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #btn:hover:before,#btn:hover:after,.dropList:hover:before,.dropList:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+      .menu {
+        border:2px solid #B19FF9
+      }
+
+      .drop-down{
+        width: 80px;
+        height: auto;
+        
+      }
+      

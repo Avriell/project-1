@@ -30,12 +30,12 @@
           </div>
 
           <div id="mode">
-               <a href="https://github.com/Avriell" class="github-logo"><ion-icon name="logo-github"></ion-icon></span>
+               <a href="https://github.com/Avriell" target="_blank" class="github-logo"><ion-icon name="logo-github"></ion-icon></a>
                
           </div>
 
           <div id="mode">
-               <a href="https://www.linkedin.com/in/avrieldev/" class="linkedIn-logo"><ion-icon name="logo-linkedin"></ion-icon></span>
+               <a href="https://www.linkedin.com/in/avrieldev/" target="_blank" class="linkedIn-logo"><ion-icon name="logo-linkedin"></ion-icon></a>
           </div>
 
           <div id="home">
@@ -87,11 +87,24 @@
 
 
           <div id="projects">
-               
+               <div class="drop-down">
+                   <button id="btn">Projects</button>
+                   <div id="menu" class="menu">
+                       <a href="#" class="dropList">Project 1</a>
+                       <a href="#" class="dropList">Project 2</a>
+                       <a href="#" class="dropList">Project 3</a>
+                   </div>
+                   </div>
+               <script>
+                   document.getElementById("btn").onclick = function(){dropDown()}
+                   function dropDown(){
+                   document.getElementById("menu").classList.toggle("show")
+                   }
+               </script>
           </div> 
 
           <div id="resume">
-            
+               <iframe src="https://docs.google.com/document/d/e/2PACX-1vRtx3nCi1Or-JbQB9PTEoV33p98sm8jVUnHtv-48BWrkL5H4EpWzvYkWTOhMKbiw2eKRO8K5GAfMz5f/pub?embedded=true"></iframe>
           </div>
 
           
